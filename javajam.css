@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+#heroroad {
+    background-image: url("images/heroroad.jpg");
+    background-size: 100% 100%;  /* 250 de size display100% */
+    height: 250px;
+}
+
+#heromugs {
+    background-image: url("images/heromugs.jpg");
+    background-size: 100% 100%;
+    height: 250px;
+}
+
+#heroguitar {
+    background-image: url("images/heroguitar.jpg");
+    background-size: 100% 100%;
+    height: 250px;
+}
+
+#herojobs{
+    height: 250px;
+    background-image: url("images/herojobs.jpg");
+    background-size: 100% 100%;
+}
+
+body{ /*element selector*/
+    background-color: #FCEBB6; /*property declaration: background color*/
+    color: #221811; /* value declaration: text color */
+    font-family: Verdana, Arial, sans-serif; /*choice of font - in priority*/
+    background-image: url("images/background.gif");
+}
+
+header {
+    background-color: #D2B48C;
+    /*text-align: center;alignment*/
+    height: 150px;
+    background-image: url("images/javajamlogo.jpg");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+h1{
+    /*line-height: 200%; spacing 200 same as double spacing*/
+    padding-top: 45px;
+    padding-left: 220px;
+    font-size: 3em;
+}
+
+nav {
+    text-align: center; /* yi qu zhong jian*/
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 10px;
+    float: left;
+    width: 200px;
+    display: block;
+}
+
+/*pseudo-classes for the navigation link
+-link >not been click (show color before click)
+-visited >after click (already click)
+-focus >when hyperlink has keyboard focus(control item yong jianpan xuan)
+-hover >mouse pointer over hyperlink
+-active >when hyperlink is actually clicked (clicked>something active> show something/?)
+not complusory to use all but must be in order
+*/
+
+nav a{
+    text-decoration: none;
+}
+
+nav a:link{
+    color: #FEF6C2;
+}
+
+nav a:visited{
+    color: #D2B48C;
+}
+
+nav a:hover{
+    color: #CC9933;
+}
+
+nav ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+footer {
+    background-color: #D2B48C;
+    font-size: .60em; /* px-pixel pt-point recommend:%-10%from website em-*/
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 10px;
+    border-top: 2px outset #221811;/* width style color*/
+    /*style - solid,dashed,dotted,inset,outset,double,groove,ridge*/
+    display: block;
+}
+
+#wrapper{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #231814;
+    min-width: 980px; /* %/px */
+    max-width: 1280px;
+    box-shadow: 5px 5px 5px #333333; /* horizontal offset(BOTTOM),vertical offset, blur radius(optional),spread distance,color of shadow*/
+}/*inset shadow inside*/
+
+h4{
+    background-color: #D2B48C;
+    font-size: 1.2em;
+    /* padding-left: .5em; */
+    padding-bottom: 0;
+    text-transform: uppercase;
+    border-bottom: 2px solid #231814;
+    clear: left;
+}
+
+main{
+    /*padding: 0em 2em 2em 2em;/* top right bottom left 2-t,b&lr 3-first-t,2-lr,3-b */
+    padding: 0 0 2em 0;
+    /*padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;*/
+    margin-left: 200px; 
+    background-color: #FEF6C2;
+    display: block;
+}
+
+main h2, main h3, main h4, main p, main div, main ul, main dl{
+    padding-left: 3em;
+    padding-right: 2em;
+}
+
+.details {
+    padding-left: 20%;
+    padding-right: 20%;
+    overflow: auto;
+}
+
+img{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.floatleft{
+    float: left;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-spacing: 0;
+    background-color: #FFFFCC;
+}
+
+th, td{
+    padding: 10px;
+}
+
+tr:nth-of-type(odd){
+    background-color: #D2B48E;
+}
+
+form{
+    padding: 2em;
+}
+
+label{
+    float: left;
+    display: block;
+    text-align: right;
+    width: 8em;
+    padding-right: 1em;
+}
+
+input, textarea{
+    display: block;
+    margin-bottom: 1em;
+}
+
+#mySubmit{
+    margin-left: 9.5em;
+}
+
